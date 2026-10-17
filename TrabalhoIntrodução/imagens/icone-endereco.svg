@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-labelledby="t">
+  <title id="t">Endereço</title>
+  <g fill="none" stroke="#1f4a28" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- marcador de mapa -->
+    <path d="M32 54 Q13 35 13 24 A19 19 0 0 1 51 24 Q51 35 32 54Z"/>
+    <circle cx="32" cy="24" r="7"/>
+    <!-- chão / rua -->
+    <path d="M12 59 H52"/>
+  </g>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-labelledby="t">
+  <title id="t">Transferência bancária</title>
+  <g fill="none" stroke="#f4e9d0" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- telhado -->
+    <path d="M6 24 L32 9 L58 24Z"/>
+    <!-- colunas -->
+    <path d="M14 29 V47 M26 29 V47 M38 29 V47 M50 29 V47"/>
+    <!-- base -->
+    <path d="M8 53 H56"/>
+    <!-- ponto no frontão -->
+    <circle cx="32" cy="19" r="2" fill="#f2a93b" stroke="none"/>
+  </g>
+</svg>

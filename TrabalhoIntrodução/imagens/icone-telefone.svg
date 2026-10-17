@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-labelledby="t">
+  <title id="t">Telefone</title>
+  <g fill="none" stroke="#1f4a28" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- fone -->
+    <path d="M16 10 H25 L29 21 L23 26 Q28 37 38 42 L43 36 L54 40 V49 Q54 55 48 55 Q12 52 9 16 Q9 10 16 10Z"/>
+    <!-- ondas de sinal -->
+    <path d="M38 14 Q48 15 50 25"/>
+    <path d="M38 6 Q56 8 58 26"/>
+  </g>
+</svg>

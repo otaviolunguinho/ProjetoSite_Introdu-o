@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-labelledby="t">
+  <title id="t">Doação via PIX</title>
+  <g fill="none" stroke="#f4e9d0" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- losango -->
+    <path d="M32 5 L59 32 L32 59 L5 32Z"/>
+    <!-- seta para a direita -->
+    <path d="M20 27 H42 M36 21 L42 27 L36 33"/>
+    <!-- seta para a esquerda -->
+    <path d="M44 38 H22 M28 32 L22 38 L28 44"/>
+  </g>
+</svg>

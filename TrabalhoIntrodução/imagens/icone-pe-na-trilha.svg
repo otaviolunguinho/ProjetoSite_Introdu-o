@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-labelledby="t">
+  <title id="t">Pé na Trilha</title>
+  <defs>
+    <clipPath id="recorte"><circle cx="100" cy="100" r="88"/></clipPath>
+    <g id="pegada">
+      <ellipse cx="0" cy="0" rx="6.5" ry="10"/>
+      <ellipse cx="0" cy="13" rx="5" ry="5"/>
+      <circle cx="-6" cy="-14" r="2.3"/>
+      <circle cx="-2" cy="-17" r="2.5"/>
+      <circle cx="3" cy="-17" r="2.3"/>
+      <circle cx="7" cy="-14" r="2"/>
+    </g>
+  </defs>
+
+  <!-- fundo -->
+  <circle cx="100" cy="100" r="96" fill="#1f4a28"/>
+  <g clip-path="url(#recorte)">
+    <rect width="200" height="200" fill="#fdf0d0"/>
+    <circle cx="140" cy="68" r="17" fill="#f2a93b"/>
+    <polygon points="14,132 76,60 128,132" fill="#7fb069"/>
+    <polygon points="64,132 130,72 200,132" fill="#2f6b3a"/>
+    <path d="M0 124 Q58 108 100 124 T200 118 V200 H0Z" fill="#1f4a28"/>
+    <!-- trilha sinuosa -->
+    <path d="M62 200 C90 170 150 160 112 130 L124 130 C168 160 120 180 150 200Z" fill="#f4e9d0"/>
+    <!-- pegadas -->
+    <g fill="#1f4a28">
+      <use href="#pegada" transform="translate(122 177) rotate(-10)"/>
+      <use href="#pegada" transform="translate(133 151) rotate(6) scale(0.75)"/>
+    </g>
+  </g>
+  <circle cx="100" cy="100" r="92" fill="none" stroke="#f2a93b" stroke-width="3"/>
+</svg>
