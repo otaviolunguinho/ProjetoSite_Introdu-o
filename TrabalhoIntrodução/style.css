@@ -505,3 +505,130 @@ body{
 
 
 /*Responsividade*/
+@media (max-width: 1024px){
+ 
+
+    .cabeca{
+        flex-direction: column;
+        padding: 10px 0;
+    }
+ 
+    .cabeca img{
+        margin-left: 0;
+    }
+ 
+    .cabeca nav ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+ 
+    .cabeca a{
+        padding: 15px 18px;
+    }
+ 
+
+    .containerinicio{
+        padding: 0 30px;
+        gap: 30px;
+    }
+ 
+    .inicio-card1{
+        font-size: large;
+    }
+ 
+    .inicio-card2 img{
+        width: 100%;
+    }
+ 
+
+    .sobre, .nossosprojetos, .comodoar, .contatos{
+        padding: 6rem 3rem;
+    }
+ 
+
+    .titulosobrenos, .tituloprojetos, .titulovideo, .titulodoar, .titulocontatos{
+        font-size: x-large;
+    }
+ 
+    .containersobrenos, .containerprojetos, .containerdoar{
+        gap: 30px;
+    }
+ 
+
+    .containercontatos{
+        grid-template-columns: 1fr;
+        max-width: 600px;
+        gap: 30px;
+    }
+ 
+
+    .titulovideo{
+        padding: 0 30px;
+    }
+ 
+    .video{
+        padding: 0 30px;
+    }
+ 
+    .video video{
+        width: 100%;
+        max-width: 800px;
+    }
+}
+ 
+ 
+@media (max-width: 720px){
+ 
+    .cabeca{
+        position: static;
+    }
+ 
+    .cabeca img{
+        height: 50px;
+    }
+ 
+    .cabeca a{
+        padding: 10px 12px;
+        font-size: medium;
+    }
+ 
+
+    .containerinicio{
+        grid-template-columns: 1fr;
+        margin-top: 30px;
+        padding: 0 20px;
+    }
+ 
+    .inicio-card1{
+        align-items: center;
+        text-align: center;
+    }
+ 
+
+    .sobre, .nossosprojetos, .comodoar, .contatos{
+        padding: 4rem 1.25rem;
+    }
+ 
+ 
+    .titulosobrenos, .tituloprojetos, .titulovideo, .titulodoar, .titulocontatos{
+        font-size: large;
+    }
+ 
+    .containersobrenos, .containerprojetos, .containerdoar{
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+ 
+    .containercontatos{
+        gap: 20px;
+    }
+ 
+    .card-contatos1 p, .card-contatos2 p, .card-contatos3 p{
+        overflow-wrap: anywhere;
+    }
+ 
+    .titulovideo, .video{
+        padding: 0 20px;
+    }
+}
