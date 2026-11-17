@@ -17,3 +17,39 @@ form.addEventListener("submit", function (evento) {
   aviso.style.color = "#285738";
   form.reset();
 });
+
+
+// Botão de copiar pix
+const botaoCopiar = document.getElementById("botao-copiar");
+const chavePix = document.getElementById("chave-pix");
+
+botaoCopiar.addEventListener("click", function () {
+  navigator.clipboard.writeText(chavePix.textContent).then(function () {
+    botaoCopiar.textContent = "Copiado com Sucesso!";
+    setTimeout(function () {
+      botaoCopiar.textContent = "Copiar chave";
+    }, 2000);
+  });
+});
+
+
+
+// Contagem dos impactos da ong
+function contar(id, valorFinal, velocidade) {
+  const elemento = document.getElementById(id);
+  let atual = 0;
+
+  const intervalo = setInterval(function () {
+    atual = atual + 1;
+    elemento.textContent = atual;
+
+    if (atual === valorFinal) {
+      clearInterval(intervalo);
+    }
+  }, velocidade);
+}
+
+contar("num-pessoas", 1534, 15);
+contar("num-trilhas", 32, 550);
+contar("num-cadeiras", 70, 320);
+contar("num-voluntarios", 1083, 25);

@@ -13,7 +13,7 @@ body{
 
 
 
-/* Seleção do cabeçalho*/
+/* Seção do cabeçalho*/
 .cabeca{
     display: flex;
     justify-content: space-between;
@@ -46,7 +46,7 @@ body{
     transform: scale(1.05);
     background-color: rgba(255, 255, 255, 0.151);
 }
-/* Seleção do cabeçalho*/
+/* Seção do cabeçalho*/
 
 
 
@@ -55,7 +55,7 @@ body{
 
 
 
-/* Seleção do inicio*/
+/* Seção do inicio*/
 .containerinicio{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -96,7 +96,33 @@ body{
 .inicio-card2:hover{
     transform: scale(1.10);
 }
-/* Seleção do Inicio*/
+
+.botaoinicio {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: #2e7d32;
+    color: #ffffff;
+    padding: 12px 24px;
+    font-family: sans-serif;
+    font-size: large;
+    border: none;             
+    border-radius: 20px;        
+    cursor: pointer;          
+    box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.1);
+    transition: 1s;
+}
+
+.botaoinicio:hover {
+    background-color: #1b5e20;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.botaoinicio:active {
+    transform: scale(1.10);
+    box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.1);
+}
 
 
 
@@ -108,7 +134,8 @@ body{
 
 
 
-/* Seleção do Sobre Nós*/
+
+/* Seção do Sobre Nós*/
 
 .sobre{
     padding: 16rem 8rem;
@@ -168,7 +195,7 @@ body{
 .cardsobrenos1:hover, .cardsobrenos2:hover{
     transform: scale(1.10);
 }
-/* Seleção do Sobre Nós*/
+/* Seção do Sobre Nós*/
 
 
 
@@ -179,7 +206,7 @@ body{
 
 
 
-/* Seleção dos Nossos Projetos*/
+/* Seção dos Nossos Projetos*/
 .nossosprojetos{
     padding: 16rem 8rem;
 }
@@ -272,7 +299,7 @@ body{
 .projeto1:hover, .projeto2:hover, .projeto3:hover,.projeto4:hover{
     transform: scale(1.10);
 }
-/* Seleção dos Nossos Projetos*/
+/* Seção dos Nossos Projetos*/
 
 
 
@@ -286,7 +313,12 @@ body{
 
 
 
-/* Seleção do Video*/
+/* Seção do Video*/
+.secao-video{
+    padding: 16rem 8rem;
+    background-color: #285738;
+}
+
 .titulovideo{
     text-align: center;
     margin: 0 auto;
@@ -297,13 +329,13 @@ body{
 }
 
 .titulovideo h2{
-    color: #285738;
+    color: #e6e3c7;
 }
 
 
 .video video {
     display: block;
-    width: 800px;              
+    width: 1200px;              
     height: auto;              
     border-radius: 15px;
     box-shadow: 0 6px 20px rgba(31, 45, 32, 0.15);
@@ -313,30 +345,61 @@ body{
     text-align: center;
     margin-bottom: 50px;
 }
-/* Seleção do Video*/
+/* Seção do Video*/
+
+
+/*Seção dos impactos*/
+
+.impacto{
+    padding: 16rem 8rem;
+}
+
+.tituloimpacto{
+    text-align: center;
+    margin: 0 auto;
+    font-size: xx-large;
+}
+
+.tituloimpacto h2{
+    color: #285738;
+}
+
+.containerimpacto{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 0 auto;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.card-impacto{
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: large;
+    box-shadow: 10px 10px 20px rgba(2, 2, 2, 0.541);
+    transition: 1s;
+}
+
+.card-impacto:hover{
+    transform: scale(1.10);
+}
+
+.numero{
+    font-size: 3rem;
+    color: #479460;
+}
+
+
+/*Seção dos impactos*/
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Seleção do Como Doar*/
+/* Seção do Como Doar*/
 .comodoar{
     padding: 16rem 8rem;
     background-color: #285738;
@@ -374,9 +437,9 @@ body{
     justify-content: center;
     font-size:large;
     background-color:#479460;
-    padding: 30px;
+    padding: 5px;
     border-radius: 20px;
-    box-shadow: 10px 10px 20px rgba(2, 2, 2, 0.541);
+    box-shadow: 10px 10px 20px 20px rgba(2, 2, 2, 0.541);
     transition: 1s;
 }
 
@@ -390,14 +453,30 @@ body{
     background-color:#479460;
     padding: 30px;
     border-radius: 20px;
-    box-shadow: 10px 10px 20px rgba(2, 2, 2, 0.541);
+    box-shadow: 10px 10px 20px 20px rgba(2, 2, 2, 0.541);
     transition: 1s;
 }
 
+.card-doar1 button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #285738;
+    color: #e6e3c7;
+    border: none;
+    border-radius: 20px;
+    font-family: inherit;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.card-doar1 button:hover {
+    background-color: #1e432b;
+}
 .card-doar1:hover, .card-doar2:hover{
     transform: scale(1.10);
 }
-/* Seleção do Como Doar*/
+/* Seção do Como Doar*/
 
 
 
@@ -416,7 +495,7 @@ body{
 
 
 
-/* Seleção do Contatos*/
+/* Seção do Contatos*/
 .contatos{
     padding: 16rem 8rem;
 }
@@ -495,7 +574,7 @@ body{
 .card-contatos1:hover, .card-contatos2:hover, .card-contatos3:hover{
     transform: scale(1.10);
 }
-/* Seleção do Contatos*/
+/* Seção do Contatos*/
 
 
 
@@ -507,7 +586,7 @@ body{
 
 
 
-/*Seleção do formulario*/
+/*Seção do formulario*/
 
 .titulosuporte{
     text-align: center;
@@ -592,16 +671,34 @@ body{
     text-align: center;
     font-size: x-large;
 }
-/*Seleção do formulario*/
+/*Seção do formulario*/
 
 
 
 
+/*Seção Agendamento*/
+.Agendamento{
+    padding: 16rem 8rem;
+}
 
+.tituloagendamento{
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+}
 
+.tituloagendamento h2{
+    color: #285738;
+}
 
-
-
+.botaoagendamento a{
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    width: 800px;
+}
 
 
 

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="agendamento.css">
+</head>
+<body>
+    <main class="agendamento" id="Agendar">
+        <div class="tituloagenda">
+            <h2>Agende sua Trilha</h2><br>
+            <p>Escolha a trilha e a data. Nossa equipe te espera!</p>
+        </div>
+
+        <form class="form" id="form-agendar">
+            <h1>Marcar trilha</h1>
+
+            <div class="campo">
+            <label for="agenda-nome">Nome Completo:</label>
+            <input type="text" id="agenda-nome" name="nome" placeholder="Digite seu nome" required>
+            </div>
+
+            <div class="campo">
+            <label for="agenda-email">Email:</label>
+            <input type="email" id="agenda-nome" name="email" placeholder="Digite seu email" required>
+            </div>
+
+            <div class="campo">
+            <label for="agenda-trilha">Trilha:</label>
+            <select id="agenda-trilha" name="trilha" required>
+                <option value="">Selecione...</option>
+                <option value="👐 Trilha Sensorial">👐 Trilha Sensorial</option>
+                <option value="🧭 Passeio Guiado">🧭 Passeio Guiado</option>
+                <option value="💦 Cachoeira Acessível">💦 Cachoeira Acessível</option>
+            </select>
+            </div>
+
+            <div class="campo">
+            <label for="agenda-data">Data:</label>
+            <input type="date" id="agenda-data" name="data" required>
+            </div>
+
+            <div class="campo">
+            <label for="agenda-pessoas">Número de pessoas:</label>
+            <input type="number" id="agenda-pessoas" required>
+            </div>
+
+            <button type="submit">Agendar trilha</button>
+            <p id="aviso-agenda"></p>
+        </form>
+
+        <div class="passaporte" id="passaporte">
+                <h2>🥾 Passaporte do Trilheiro</h2>
+                <p id="pass-nome"></p>
+                <p id="pass-trilha"></p>
+                <p id="pass-data"></p>
+                <p id="pass-dias"></p>
+                <p id="pass-dica"></p>
+        </div>
+
+    </main>
+    <script src="agendamento.js"></script>
+</body>
+</html>

@@ -18,6 +18,7 @@
                     <a href="#Sobre_Nós">Sobre Nós</a>
                     <a href="#Nossos_Projetos">Nossos Projetos</a>
                     <a href="#Video">Video</a>
+                    <a href="#Impacto">Impacto</a>
                     <a href="#Como_Doar">Como Doar</a>
                     <a href="#Contatos">Contatos</a>
                     <a href="#formulario">Suporte</a>
@@ -40,6 +41,13 @@
                 <img src="imagens/ilustracao-pe-na-trilha.svg" alt="">
             </div> 
         </div>
+
+        <div class="botaoinicio-container">
+            <button type="button" class="botaoinicio" onclick="location.href='#Agendamento'">
+                Click Aqui Para Fazer um passeio!!!
+            </button>
+        </div>
+
     </section>
 
     
@@ -107,7 +115,7 @@
     <section id="Video" class="secao-video">
         <div class="titulovideo">
             <h2>Conheça nosso trabalho</h2><br>
-            <p class="video-legenda">Veja como a natureza pode ser vivida por todos.</p>
+            <p class="video-legenda">Veja como a natureza pode ser vivida por todos.</p><br>
         </div>
 
         <div class="video">
@@ -115,6 +123,41 @@
         </div>
     </section>
 
+
+
+
+
+    <section class="impacto" id="Impacto">
+
+        <div class="tituloimpacto">
+            <h2>Nosso Impacto</h2><br>
+            <p>Cada número é uma história de superação.</p>
+        </div>
+
+        <div class="containerimpacto">
+
+            <div class="card-impacto">
+                <h3 class="numero" id="num-pessoas">0</h3>
+                <p>Pessoas atendidas</p>
+            </div>
+
+            <div class="card-impacto">
+                <h3 class="numero" id="num-trilhas">0</h3>
+                <p>Trilhas adaptadas</p>
+            </div>
+
+            <div class="card-impacto">
+                <h3 class="numero" id="num-cadeiras">0</h3>
+                <p>Cadeiras de trilha</p>
+            </div>
+
+            <div class="card-impacto">
+                <h3 class="numero" id="num-voluntarios">0</h3>
+                <p>Voluntários</p>
+            </div>
+
+        </div>
+    </section>
 
 
 
@@ -129,7 +172,8 @@
             <div class="card-doar1">
                 <img src="imagens/icone-pix.svg" alt="">
                 <h2>Doação via PIX</h2><br>
-                <p><strong>Chave: </strong> pedetrilha@org.br</p>
+                <p><strong>Chave: </strong> <span id="chave-pix">pedetrilha@org.br</span></p>
+                <button type="button" id="botao-copiar">Copiar chave</button>
             </div>
             <div class="card-doar2">
                 <img src="imagens/icone-transferencia-bancaria.svg" alt="">
@@ -165,6 +209,15 @@
         </div>
     </section>
 
+
+
+
+
+
+
+
+
+    
     <section class="formulario" id="formulario">
         <div class="titulosuporte">
             <h2>Suporte</h2><br>
@@ -202,6 +255,31 @@
             <p id="aviso"></p>
         </form>
     </section>
+
+
+
+
+
+
+
+
+
+    <section class="Agendamento" id="Agendamento">
+
+        <div class="tituloagendamento">
+            <h2>Agendamento</h2><br>
+            <p>Agende sua trilha inclusiva gratuita!!!</p><br>
+        </div>
+
+        <div class="botaoagendamento">
+            <button type="button" class="botaoinicio">
+                <a href="agendamento.html" target="_blank">📆Fazer agendamento online📆</a>
+            </button>
+        </div>
+
+    </section>
+
+
 <script src="script.js"></script>
 </body>
 </html>
